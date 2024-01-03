@@ -1,11 +1,19 @@
 import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap"
-const MenuItem = ({ dish }) => {
+const MenuItem = ({ dish, onSelectedDish }) => {
   return (
-    <div className="col-md-4">
-      <Card inverse className="mb-1" color="dark">
+    <div>
+      <Card inverse className="mb-1" style={{ cursor: "pointer" }} color="dark" onClick={() => onSelectedDish(dish)}>
         <CardImg alt={dish.name} src={dish.image} style={{ height: 270, opacity: 0.5 }} width="100%" />
         <CardImgOverlay>
-          <CardTitle tag="h5" className="fw-bold"> {dish.name} </CardTitle>
+          <CardTitle tag="h3" className="fw-bold">
+            {dish.name}
+          </CardTitle>
+          <CardTitle tag="h5">
+            Catagory: {dish.category}
+          </CardTitle>
+          <CardTitle tag="h6" style={{ textAlign: "right", marginTop: 150 }}>
+            DISH Code: {dish.category.substr(0, 3)}-{dish.id + 1001}
+          </CardTitle>
         </CardImgOverlay>
       </Card>
     </div>

@@ -4,7 +4,7 @@ const NavigationComponent = () => {
     <div>
       <Navbar color="secondary" dark>
         <NavbarBrand href="/">
-          Reactstrap
+          PETUK-RESTORA
         </NavbarBrand>
       </Navbar>
     </div>

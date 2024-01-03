@@ -185,12 +185,12 @@ const DISHES = [
   },
   {
     id: 4,
-    name: 'Cheese Cake',
+    name: 'Coffe',
     image: 'assets/images/4coffe.PNG',
-    category: 'coffe',
+    category: 'starters',
     label: '',
     price: '170',
-    description: 'A delectable, semi-sweet New York Style Cheese Cake, with cracker crust and spiced with Indian cardamoms',
+    description: 'A delectable, semi-sweet New York Style Coffe, with sugar',
     comments: [
       {
         id: 0,
