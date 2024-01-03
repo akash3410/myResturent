@@ -33,6 +33,15 @@ const FakeItem = () => {
           <CardText style={{ color: 'red' }}>
             Price...................
           </CardText>
+          <div className="fst-italic">
+            <h4 className="fw-bold fst-italic">Comments</h4>
+            <hr />
+            <h5 className="fw-bold">Commented By...</h5>
+            <p>Comment.....</p>
+            <p>Ratting.....</p>
+            <p>Date.....</p>
+            <hr />
+          </div>
         </CardBody>
       </Card>
     </div>
