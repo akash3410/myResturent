@@ -3,14 +3,14 @@ import { Card, CardBody, CardImg, CardText, CardTitle, Toast, ToastHeader } from
 const FakeItem = () => {
   return (
     <div>
-      <div className="py-3 rounded">
+      <div className="py-2 rounded">
         <Toast>
           <ToastHeader>
             Click on your DISH to See Your Dish details..
           </ToastHeader>
         </Toast>
       </div>
-      <Card style={{ textAlign: 'left' }}>
+      <Card style={{ textAlign: 'left' }} >
         <CardImg
           alt="Your DISH"
           src="/"

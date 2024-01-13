@@ -4,21 +4,21 @@ import LoadComments from './LoadComments';
 const DishDetails = ({ dish }) => {
   return (
     <div>
-      <div className="py-3 rounded">
+      <div className="py-2 rounded">
         <Toast>
           <ToastHeader>
             Your Dish Details
           </ToastHeader>
         </Toast>
       </div>
-      <Card style={{ textAlign: 'left' }}>
+      <Card style={{ textAlign: 'left', padding: 10 }} className="shadow-lg p-3 mb-5 rounded">
         <CardImg
           alt={dish.name}
+          className='dishDetailImg'
           src={dish.image}
           style={{
-            height: 235
+            height: 300,
           }}
-          top
           width="100%"
         />
         <CardBody>

@@ -16,22 +16,20 @@ const MenuComponent = () => {
   })
   const dishDetail = selectedDish ? <DishDetails dish={selectedDish} /> : <FakeItem />;
   return (
-    <div>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-5">
-            <div className="py-3 rounded">
-              <Toast>
-                <ToastHeader>
-                  Our menu Card
-                </ToastHeader>
-              </Toast>
-            </div>
-            {menu}
+    <div className="ps-5 dishrightPadding">
+      <div className="row">
+        <div className="col-md-4">
+          <div className="py-2 rounded">
+            <Toast>
+              <ToastHeader>
+                Our menu Card
+              </ToastHeader>
+            </Toast>
           </div>
-          <div className="col-md-7">
-            {dishDetail}
-          </div>
+          {menu}
+        </div>
+        <div className="col-md-8">
+          {dishDetail}
         </div>
       </div>
     </div>

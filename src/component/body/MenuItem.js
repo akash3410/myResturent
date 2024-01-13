@@ -3,7 +3,7 @@ const MenuItem = ({ dish, onSelectedDish }) => {
   return (
     <div>
       <Card inverse className="mb-1" style={{ cursor: "pointer" }} color="dark" onClick={() => onSelectedDish(dish)}>
-        <CardImg alt={dish.name} src={dish.image} style={{ height: 270, opacity: 0.5 }} width="100%" />
+        <CardImg alt={dish.name} src={dish.image} style={{ height: 190, opacity: 0.3 }} width="100%" />
         <CardImgOverlay>
           <CardTitle tag="h3" className="fw-bold">
             {dish.name}

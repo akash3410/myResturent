@@ -1,9 +1,9 @@
+import React from "react";
 import MenuComponent from "./MenuComponent";
-
 
 const BodyComponent = () => {
   return (
-    <div>
+    <div className="">
       <MenuComponent />
     </div>
   )
