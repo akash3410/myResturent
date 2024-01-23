@@ -11,7 +11,7 @@ const MenuItem = ({ dish, onSelectedDish }) => {
           <CardTitle tag="h5">
             Catagory: {dish.category}
           </CardTitle>
-          <CardTitle tag="h6" style={{ textAlign: "right", marginTop: 150 }}>
+          <CardTitle tag="h6" style={{ textAlign: "right", marginTop: 70 }}>
             DISH Code: {dish.category.substr(0, 3)}-{dish.id + 1001}
           </CardTitle>
         </CardImgOverlay>

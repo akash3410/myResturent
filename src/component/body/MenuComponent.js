@@ -6,6 +6,7 @@ import DishDetails from "./DishDetails";
 import FakeItem from "./FakeItem";
 
 const MenuComponent = () => {
+  document.title = "Menu"
   const [dishes] = useState(DISHES);
   const [selectedDish, SetSelectedDish] = useState(null);
   const onSelectedDish = (dish) => {
@@ -16,7 +17,7 @@ const MenuComponent = () => {
   })
   const dishDetail = selectedDish ? <DishDetails dish={selectedDish} /> : <FakeItem />;
   return (
-    <div className="ps-5 dishrightPadding">
+    <div className="ps-5 dishrightPadding menu-margin">
       <div className="row">
         <div className="col-md-4">
           <div className="py-2 rounded">
