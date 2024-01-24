@@ -1,8 +1,8 @@
 import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap"
 const MenuItem = ({ dish, onSelectedDish }) => {
   return (
-    <div>
-      <Card inverse className="mb-1" style={{ cursor: "pointer" }} color="dark" onClick={() => onSelectedDish(dish)}>
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <Card inverse className="mb-2" style={{ cursor: "pointer" }} color="dark" onClick={() => onSelectedDish(dish)}>
         <CardImg alt={dish.name} src={dish.image} style={{ height: 190, opacity: 0.3 }} width="100%" />
         <CardImgOverlay>
           <CardTitle tag="h3" className="fw-bold">

@@ -13,14 +13,6 @@
   margin-top: 60px;
 }
 
-.menu-margin {
-  margin-top: 60px;
-}
-
-.dishrightPadding {
-  padding-right: 100px;
-}
-
 .footer {
   background-color: #ddd;
   margin: 0 auto;
@@ -28,6 +20,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .row-content {

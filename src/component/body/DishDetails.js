@@ -1,21 +1,21 @@
 import { Card, CardBody, CardImg, CardText, CardTitle, Toast, ToastHeader } from 'reactstrap';
 import LoadComments from './LoadComments';
 
-const DishDetails = ({ dish }) => {
+const DishDetails = props => {
   return (
     <div>
-      <div className="py-2 rounded">
+      <div className="p-2 rounded">
         <Toast>
           <ToastHeader>
             Your Dish Details
           </ToastHeader>
         </Toast>
       </div>
-      <Card style={{ textAlign: 'left', padding: 10 }} className="shadow-lg p-3 mb-5 rounded">
+      <Card style={{ textAlign: 'left' }} className="shadow-lg p-3 rounded">
         <CardImg
-          alt={dish.name}
+          alt={props.dish.name}
           className='dishDetailImg'
-          src={dish.image}
+          src={props.dish.image}
           style={{
             height: 300,
           }}
@@ -23,18 +23,18 @@ const DishDetails = ({ dish }) => {
         />
         <CardBody>
           <CardTitle tag="h5" className='fw-bold'>
-            {dish.name}
+            {props.dish.name}
           </CardTitle>
           <CardText>
-            {dish.description}
+            {props.dish.description}
           </CardText>
           <CardText style={{ color: 'green' }}>
-            Category: {dish.category}
+            Category: {props.dish.category}
           </CardText>
           <CardText style={{ color: 'red' }}>
-            Price: {dish.price}/=
+            Price: {props.dish.price}/=
           </CardText>
-          <LoadComments comments={dish.comments} />
+          <LoadComments comments={props.comments} />
         </CardBody>
       </Card>
     </div>

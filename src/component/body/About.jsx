@@ -3,7 +3,11 @@ import React from 'react'
 const About = () => {
   document.title = "About"
   return (
-    <div>About</div>
+    <div className='container'>
+      <div className="row row-content">
+        About
+      </div>
+    </div>
   )
 }
 
