@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Spinner from './Spinner';
 
 export class Home extends Component {
   render() {
